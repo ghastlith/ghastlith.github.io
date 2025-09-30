@@ -31,11 +31,11 @@ export function getNavigationItems(page: Page): IconButtonInfo[] {
   const center: IconButtonInfo[] =  routes[page] ? [routes[page]] : [];
 
   const items: IconButtonInfo[] = [
-    { icon: LinkedInIcon,   target: "_blank", href: "https://www.linkedin.com/in/blarknes" },
-    { icon: GitHubIcon,     target: "_blank", href: "https://github.com/blarknes" },
+    { icon: LinkedInIcon,   target: "_blank", href: "https://www.linkedin.com/in/ghastlith" },
+    { icon: GitHubIcon,     target: "_blank", href: "https://github.com/ghastlith" },
     ...center,
     { icon: HackTheBoxIcon, target: "_blank", href: "https://app.hackthebox.com/profile/1419398" },
-    { icon: TryHackMeIcon,  target: "_blank", href: "https://tryhackme.com/p/blarknes" },
+    { icon: TryHackMeIcon,  target: "_blank", href: "https://tryhackme.com/p/ghastlith" },
   ];
 
   return items;

@@ -1,4 +1,4 @@
-# [blarknes.github.io](https://blarknes.github.io/)
+# [ghastlith.github.io](https://ghastlith.github.io/)
 
 My personal webpage, a place where you can find my social media profiles.
 
