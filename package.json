@@ -9,7 +9,7 @@
     "build": "vite build",
     "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig tsconfig.json",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages --nojekyll --no-history --message updates --dist build"
   },
   "devDependencies": {
     "@iconify-json/dashicons": "^1.2.1",
