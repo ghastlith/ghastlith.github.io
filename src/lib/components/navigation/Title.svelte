@@ -1,9 +1,9 @@
 <script lang="ts">
   import { Page } from "$enums";
 
-  type TitleProps = {
+  interface TitleProps {
     page: Page;
-  };
+  }
 
   let { page }: TitleProps = $props();
 </script>

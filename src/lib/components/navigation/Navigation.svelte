@@ -3,9 +3,9 @@
   import { Page } from "$enums";
   import { getNavigationItems } from "$functions/route";
 
-  type NavigationProps = {
+  interface NavigationProps {
     page: Page;
-  };
+  }
 
   let { page }: NavigationProps = $props();
 

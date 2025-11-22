@@ -1,9 +1,9 @@
 <script lang="ts">
   import { load } from "$functions/utility";
 
-  type ImageLoaderProps = {
+  interface ImageLoaderProps {
     image: ImageInfo;
-  };
+  }
 
   let { image }: ImageLoaderProps = $props();
 

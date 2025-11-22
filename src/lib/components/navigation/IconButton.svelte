@@ -1,7 +1,7 @@
 <script lang="ts">
-  type IconButtonProps = {
+  interface IconButtonProps {
     info: IconButtonInfo;
-  };
+  }
 
   let { info }: IconButtonProps = $props();
 
