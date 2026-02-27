@@ -1,35 +1,30 @@
 <script lang="ts">
-  import { TypeWriter } from "svelte-typewrite";
+  import { TypeWriter } from "$components";
+  import { delay, onPageLoad } from "$functions/utility";
+  import { onMount } from "svelte";
 
-  type AfterDeleted = {
-    blink: number;
-  };
+  let loaded: boolean = $state(false);
 
-  const texts: string[] = [
-    " a developer",
-    " the villain",
-    " nonchalant",
-    " a hacker",
-    " infinite",
-    " a lover",
-    " me",
-  ];
+  const stagger: number = 1000;
 
-  const afterDeleted: AfterDeleted = {
-    blink: 2,
-  };
+  async function run(): Promise<void> {
+    await delay(stagger);
+    loaded = true;
+  }
+
+  function setup(): void {
+    onPageLoad(document, run);
+  }
+
+  onMount(setup);
 </script>
 
 <h1 class="bold">Hello! I am Vilas</h1>
-<p>I am <TypeWriter {texts} {afterDeleted} /></p>
+<TypeWriter {loaded} />
 
 <style lang="scss">
   h1 {
     margin-top: 27dvh;
     font-size: calc(0.8dvw + 1.7rem);
-  }
-
-  p {
-    font-size: calc(0.25dvw + 1.1rem);
   }
 </style>
