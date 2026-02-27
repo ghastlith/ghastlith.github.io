@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { load } from "$functions/utility";
+  import { render } from "$functions/utility";
 
   interface ImageLoaderProps {
     image: ImageInfo;
@@ -12,7 +12,7 @@
   const alt: string = image.alt;
 </script>
 
-{#await load(large)}
+{#await render(large)}
   <img {src} {alt} />
 {:then src}
   <img {src} {alt} />

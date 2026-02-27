@@ -13,7 +13,7 @@ export async function delay(time: number = 500): Promise<void> {
  * @param src the asset src path
  * @returns The loaded asset.
  */
-export async function load(src: string): Promise<ImageSrc> {
+export async function render(src: string): Promise<ImageSrc> {
   const data: Response = await fetch(src);
   const blob: Blob = await data.blob();
 
