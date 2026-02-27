@@ -6,11 +6,11 @@
 
   let loading: boolean = $state(true);
 
+  const stagger: number = 600;
   const color: string = "#ebedf0";
   const size: string = "40";
   const unit: string = "px";
   const duration: string = "1.2s";
-  const stagger: number = 600;
 
   async function fadeout(): Promise<void> {
     await delay();
