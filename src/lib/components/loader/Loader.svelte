@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { delay } from "$functions/utility";
+  import { delay, onPageLoad } from "$functions/utility";
   import { onMount } from "svelte";
   import { RingLoader } from "svelte-loading-spinners";
   import { fade } from "svelte/transition";
@@ -11,13 +11,13 @@
   const unit: string = "px";
   const duration: string = "1.2s";
 
-  function setup(): void {
-    document.fonts.ready.then(fadeout);
-  }
-
   async function fadeout(): Promise<void> {
     await delay();
     loading = false;
+  }
+
+  function setup(): void {
+    onPageLoad(document, fadeout);
   }
 
   onMount(setup);
@@ -25,7 +25,7 @@
 
 {#if loading}
   <section transition:fade={{ duration: 600 }}>
-    <RingLoader {color} {size} {unit} {duration}  />
+    <RingLoader {color} {size} {unit} {duration} />
   </section>
 {/if}
 

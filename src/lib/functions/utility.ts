@@ -1,3 +1,7 @@
+interface Function {
+  (): Promise<void>;
+}
+
 /**
  * Delays the current thread by X amount of milisseconds.
  *
@@ -26,4 +30,14 @@ export async function render(src: string): Promise<ImageSrc> {
   });
 
   return image;
+}
+
+/**
+ * Check page rendering based on font loading and then trigger the callback.
+ * 
+ * @param document the current page DOM
+ * @param callback the function to be called after page is rendered
+ */
+export function onPageLoad(document: Document, callback: Function): void {
+  document.fonts.ready.then(callback);
 }
