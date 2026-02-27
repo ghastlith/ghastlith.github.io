@@ -6,6 +6,7 @@ declare global {
 
   type IconButtonInfo = {
     icon: Icon;
+    title: string;
     target: string;
     href: string;
   };

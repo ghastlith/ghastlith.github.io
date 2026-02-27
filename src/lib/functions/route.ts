@@ -1,13 +1,13 @@
 import { resolve } from "$app/paths";
-import { Page } from "$enums";
+import { Page, Target } from "$enums";
 import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeIcon } from "$icons";
 
 /**
  * The respective navigation bar center route based on the page.
  */
 const routes: Partial<Record<Page, IconButtonInfo>> = {
-  [Page.HOME]:       { icon: CatIcon,  target: "_self", href: resolve("/wonderland") },
-  [Page.WONDERLAND]: { icon: HomeIcon, target: "_self", href: resolve("/") },
+  [Page.HOME]:       { icon: CatIcon,  title: Page.HOME,       target: Target.SELF, href: resolve("/wonderland") },
+  [Page.WONDERLAND]: { icon: HomeIcon, title: Page.WONDERLAND, target: Target.SELF, href: resolve("/") },
 };
 
 /**
@@ -31,11 +31,11 @@ export function getNavigationItems(page: Page): IconButtonInfo[] {
   const center: IconButtonInfo[] =  routes[page] ? [routes[page]] : [];
 
   const items: IconButtonInfo[] = [
-    { icon: LinkedInIcon,   target: "_blank", href: "https://www.linkedin.com/in/ghastlith" },
-    { icon: GitHubIcon,     target: "_blank", href: "https://github.com/ghastlith" },
+    { icon: LinkedInIcon,   title: "linkedin",   target: Target.BLANK, href: "https://www.linkedin.com/in/ghastlith" },
+    { icon: GitHubIcon,     title: "github",     target: Target.BLANK, href: "https://github.com/ghastlith" },
     ...center,
-    { icon: HackTheBoxIcon, target: "_blank", href: "https://app.hackthebox.com/profile/1419398" },
-    { icon: TryHackMeIcon,  target: "_blank", href: "https://tryhackme.com/p/ghastlith" },
+    { icon: HackTheBoxIcon, title: "hackthebox", target: Target.BLANK, href: "https://app.hackthebox.com/profile/1419398" },
+    { icon: TryHackMeIcon,  title: "tryhackme",  target: Target.BLANK, href: "https://tryhackme.com/p/ghastlith" },
   ];
 
   return items;
