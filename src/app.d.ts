@@ -7,10 +7,10 @@ import type { ResolvedPathname } from "$app/types";
 declare global {
   type LayoutInfo = {
     page: Page;
-  }
+  };
 
   type Path = URL & {
-    pathname: ResolvedPath
+    pathname: ResolvedPath;
   };
 
   type ResolvedPath = ResolvedPathname;

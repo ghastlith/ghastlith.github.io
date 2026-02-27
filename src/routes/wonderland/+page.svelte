@@ -28,7 +28,7 @@
   }
 
   p, span {
-    font-size: calc(.8dvw + 1.2rem);
+    font-size: calc(0.8dvw + 1.2rem);
     font-family: "Shantell Sans", cursive;
   }
 

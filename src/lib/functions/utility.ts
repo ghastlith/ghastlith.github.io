@@ -34,7 +34,7 @@ export async function render(src: string): Promise<ImageSrc> {
 
 /**
  * Check page rendering based on font loading and then trigger the callback.
- * 
+ *
  * @param document the current page DOM
  * @param callback the function to be called after page is rendered
  */

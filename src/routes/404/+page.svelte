@@ -28,7 +28,7 @@
   }
 
   p {
-    margin-top: .6dvh;
+    margin-top: 0.6dvh;
     text-align: right;
   }
 </style>
