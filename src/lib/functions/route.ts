@@ -6,8 +6,8 @@ import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeI
  * The respective navigation bar center route based on the page.
  */
 const routes: Partial<Record<Page, IconButtonInfo>> = {
-  [Page.HOME]:       { icon: CatIcon,  title: Page.HOME,       target: Target.SELF, href: resolve("/wonderland") },
-  [Page.WONDERLAND]: { icon: HomeIcon, title: Page.WONDERLAND, target: Target.SELF, href: resolve("/") },
+  [Page.HOME]:       { icon: CatIcon,  title: Page.WONDERLAND, target: Target.SELF, href: resolve("/wonderland") },
+  [Page.WONDERLAND]: { icon: HomeIcon, title: Page.HOME,       target: Target.SELF, href: resolve("/") },
 };
 
 /**
