@@ -3,10 +3,9 @@
   import { Background, Loader, MetaTags, Navigation, Title } from "$components";
   import { Page } from "$enums";
   import "$styles";
-  import type { Snippet } from "svelte";
 
   interface LayoutProps {
-    children: Snippet<[]>;
+    children: Children;
   }
 
   let { children }: LayoutProps = $props();
