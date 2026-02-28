@@ -11,7 +11,7 @@ npm i
 npm run dev
 ```
 
-As for deploying to GitHub pages, run the _deploy_ command.
+The GitHub Actions pipeline will take care of deploying automatically on master branch pushes, but this can also be done manually by running the _deploy_ command.
 
 ```sh
 npm i
