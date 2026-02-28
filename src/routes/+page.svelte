@@ -5,7 +5,7 @@
 
   let loaded: boolean = $state(false);
 
-  const stagger: number = 1000;
+  const stagger: number = 1200;
 
   async function run(): Promise<void> {
     await delay(stagger);
