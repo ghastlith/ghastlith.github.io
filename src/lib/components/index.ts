@@ -3,8 +3,8 @@ import TypeWriter from "./content/TypeWriter.svelte";
 import ImageLoader from "./loader/ImageLoader.svelte";
 import Loader from "./loader/Loader.svelte";
 import MetaTags from "./meta/MetaTags.svelte";
-import IconButton from "./navigation/IconButton.svelte";
 import Navigation from "./navigation/Navigation.svelte";
+import NavigationItem from "./navigation/NavigationItem.svelte";
 import Title from "./navigation/Title.svelte";
 
 export {
@@ -13,7 +13,7 @@ export {
   ImageLoader,
   Loader,
   MetaTags,
-  IconButton,
   Navigation,
+  NavigationItem,
   Title,
 };

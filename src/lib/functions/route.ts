@@ -5,7 +5,7 @@ import { CatIcon, GitHubIcon, HackTheBoxIcon, HomeIcon, LinkedInIcon, TryHackMeI
 /**
  * The respective navigation bar center route based on the page.
  */
-const routes: Partial<Record<Page, IconButtonInfo>> = {
+const routes: Partial<Record<Page, NavigationItemInfo>> = {
   [Page.HOME]:       { icon: CatIcon,  title: Page.WONDERLAND, target: Target.SELF, href: resolve("/wonderland") },
   [Page.WONDERLAND]: { icon: HomeIcon, title: Page.HOME,       target: Target.SELF, href: resolve("/") },
 };
@@ -23,14 +23,14 @@ const blacklist: Page[] = [
  * @param page the current displayed page
  * @returns The list of items for the navigation bar or empty if the page is blacklisted.
  */
-export function getNavigationItems(page: Page): IconButtonInfo[] {
+export function getNavigationItems(page: Page): NavigationItemInfo[] {
   if (blacklist.includes(page)) {
     return [];
   }
 
-  const center: IconButtonInfo[] =  routes[page] ? [routes[page]] : [];
+  const center: NavigationItemInfo[] =  routes[page] ? [routes[page]] : [];
 
-  const items: IconButtonInfo[] = [
+  const items: NavigationItemInfo[] = [
     { icon: LinkedInIcon,   title: "linkedin",   target: Target.BLANK, href: "https://www.linkedin.com/in/ghastlith" },
     { icon: GitHubIcon,     title: "github",     target: Target.BLANK, href: "https://github.com/ghastlith" },
     ...center,

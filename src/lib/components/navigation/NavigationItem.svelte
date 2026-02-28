@@ -1,9 +1,9 @@
 <script lang="ts">
-  interface IconButtonProps {
-    info: IconButtonInfo;
+  interface NavigationItemProps {
+    info: NavigationItemInfo;
   }
 
-  let { info }: IconButtonProps = $props();
+  let { info }: NavigationItemProps = $props();
 
   const href: string = info.href;
   const target: string = info.target;

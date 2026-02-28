@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { IconButton } from "$components";
+  import { NavigationItem } from "$components";
   import { Page } from "$enums";
   import { getNavigationItems } from "$functions/route";
 
@@ -9,17 +9,17 @@
 
   let { page }: NavigationProps = $props();
 
-  let items: IconButtonInfo[] = $derived(getNavigationItems(page));
+  let items: NavigationItemInfo[] = $derived(getNavigationItems(page));
   let visible: boolean = $derived(items.length > 0);
 </script>
 
-{#if visible}
-  <nav>
+<nav>
+  {#if visible}
     {#each items as info}
-      <IconButton {info} />
+      <NavigationItem {info} />
     {/each}
-  </nav>
-{/if}
+  {/if}
+</nav>
 
 <style lang="scss">
   nav {
