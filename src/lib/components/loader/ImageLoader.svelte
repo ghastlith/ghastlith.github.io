@@ -13,19 +13,13 @@
 </script>
 
 {#await render(large)}
-  <img {src} {alt} />
+  <img {src} {alt} class="unselectable" />
 {:then src}
-  <img {src} {alt} />
+  <img {src} {alt} class="unselectable" />
 {/await}
 
 <style lang="scss">
   img {
     height: 100%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 </style>
