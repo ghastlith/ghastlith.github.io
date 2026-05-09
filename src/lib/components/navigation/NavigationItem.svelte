@@ -5,9 +5,9 @@
 
   let { info }: NavigationItemProps = $props();
 
-  const href: string = info.href;
-  const target: string = info.target;
-  const content: string = info.title;
+  const href: string = $derived(info.href);
+  const target: string = $derived(info.target);
+  const content: string = $derived(info.title);
 </script>
 
 <a {href} {target}>

@@ -7,9 +7,9 @@
 
   let { image }: ImageLoaderProps = $props();
 
-  const large: string = image.large;
-  const src: string = image.small;
-  const alt: string = image.alt;
+  const large: string = $derived(image.large);
+  const src: string = $derived(image.small);
+  const alt: string = $derived(image.alt);
 </script>
 
 {#await render(large)}
