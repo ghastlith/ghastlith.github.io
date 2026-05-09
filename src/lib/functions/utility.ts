@@ -41,3 +41,13 @@ export async function render(src: string): Promise<ImageSrc> {
 export function onPageLoad(document: Document, callback: Function): void {
   document.fonts.ready.then(callback);
 }
+
+/**
+ * Check if provided value is an instance of its type and not undefined.
+ *
+ * @param value the value to be checked
+ * @returns If value is not undefined.
+ */
+export function isDefined<T>(value: T | undefined): value is T {
+  return value !== undefined;
+}

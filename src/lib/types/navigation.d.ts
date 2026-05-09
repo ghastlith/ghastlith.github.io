@@ -5,6 +5,8 @@ declare global {
     target: string;
     href: string;
   };
+
+  type OptionalNavigationItemInfo = NavigationItemInfo | undefined;
 }
 
 export {};
