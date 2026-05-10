@@ -19,7 +19,7 @@
   onMount(setup);
 </script>
 
-<h1 class="bold">Hello! I am Vilas</h1>
+<h1 class="bold">Hello! I am Hades</h1>
 <TypeWriter {loaded} />
 
 <style lang="scss">
