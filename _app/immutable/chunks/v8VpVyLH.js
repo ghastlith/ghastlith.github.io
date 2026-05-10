@@ -1,0 +1,1 @@
+var n=(r=>(r.HOME="home",r.WONDERLAND="wonderland",r.NOT_FOUND="not found",r))(n||{}),a=(r=>(r.GITHUB="github",r.TRYHACKME="tryhackme",r))(a||{}),o=(r=>(r.BLANK="_blank",r.SELF="_self",r))(o||{});export{a as E,n as P,o as T};
