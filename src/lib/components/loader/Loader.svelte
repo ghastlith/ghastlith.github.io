@@ -30,7 +30,7 @@
   </section>
 {/if}
 
-<style lang="scss">
+<style>
   section {
     display: flex;
     justify-content: center;
@@ -40,6 +40,6 @@
     width: 100dvw;
     height: 100dvh;
     padding-top: 44dvh;
-    background-color: palette.$background;
+    background-color: var(--background);
   }
 </style>

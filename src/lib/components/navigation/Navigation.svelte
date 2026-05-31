@@ -21,7 +21,7 @@
   {/if}
 </nav>
 
-<style lang="scss">
+<style>
   nav {
     display: flex;
     justify-content: center;

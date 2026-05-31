@@ -19,10 +19,10 @@
   onMount(setup);
 </script>
 
-<h1 class="bold">Hello! I am Hades</h1>
+<h1><b>Hello! I am Hades</b></h1>
 <TypeWriter {loaded} />
 
-<style lang="scss">
+<style>
   h1 {
     margin-top: 27dvh;
     font-size: calc(0.8dvw + 1.7rem);

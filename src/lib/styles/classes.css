@@ -1,0 +1,44 @@
+.thin {
+  font-weight: 300;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-color: var(--accent);
+
+  &::-moz-selection {
+    background-color: var(--highlight);
+    color: var(--background);
+  }
+
+  &::selection {
+    background-color: var(--highlight);
+    color: var(--background);
+  }
+}
+
+.accent {
+  color: var(--highlight);
+
+  &::-moz-selection {
+    background-color: var(--highlight);
+    color: var(--accent);
+  }
+
+  &::selection {
+    background-color: var(--highlight);
+    color: var(--accent);
+  }
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -14,7 +14,7 @@
   </picture>
 </section>
 
-<style lang="scss">
+<style>
   section {
     display: flex;
     align-items: end;

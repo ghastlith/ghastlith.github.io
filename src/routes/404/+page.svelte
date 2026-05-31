@@ -1,16 +1,19 @@
 <script lang="ts">
   import { resolve } from "$app/paths";
+  import { classes } from "$functions/styles";
 
   const href: ResolvedPath = resolve("/");
+
+  const { thin, accent } = classes;
 </script>
 
 <section>
-  <h1 class="bold">404</h1>
-  <h2 class="thin">I have my own problems to take care of.<a {href} class="accent">&nbsp;Here, this one is yours</a></h2>
-  <p class="thin">- Wirt (the<span class="italic">&nbsp;Elder&nbsp;</span>Child)</p>
+  <h1><b>404</b></h1>
+  <h2 class:thin>I have my own problems to take care of. <a {href} class:accent>Here, this one is yours</a></h2>
+  <p class:thin>- Wirt (the <i>Elder</i> Child)</p>
 </section>
 
-<style lang="scss">
+<style>
   section {
     display: flex;
     flex-direction: column;

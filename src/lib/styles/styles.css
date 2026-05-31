@@ -1,5 +1,5 @@
-@use "palette";
-@use "classes";
+@import "./palette.css";
+@import "./classes.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -14,22 +14,22 @@
   text-decoration: none;
   text-rendering: optimizeLegibility;
   text-size-adjust: none;
-  color: palette.$primary;
+  color: var(--primary);
   box-sizing: border-box;
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
 }
 
 ::-moz-selection {
-  background: palette.$selection;
+  background: var(--selection);
 }
 
 ::selection {
-  background: palette.$selection;
+  background: var(--selection);
 }
 
 html {
-  background-color: palette.$background;
+  background-color: var(--background);
 }
 
 a, a * {
@@ -37,6 +37,6 @@ a, a * {
 }
 
 a:hover, a:hover * {
-  color: palette.$accent;
+  color: var(--accent);
   transition: all 0.2s ease-out;
 }

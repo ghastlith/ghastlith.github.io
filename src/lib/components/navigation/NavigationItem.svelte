@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { classes } from "$functions/styles";
+
   interface NavigationItemProps {
     info: NavigationItemInfo;
   }
@@ -8,14 +10,16 @@
   let href: string = $derived(info.href);
   let target: string = $derived(info.target);
   let content: string = $derived(info.title);
+
+  const { unselectable } = classes;
 </script>
 
 <a {href} {target}>
   <info.icon />
-  <span class="unselectable">{content}</span>
+  <span class:unselectable>{content}</span>
 </a>
 
-<style lang="scss">
+<style>
   a {
     position: relative;
     font-size: calc(0.45dvw + 1.2rem);

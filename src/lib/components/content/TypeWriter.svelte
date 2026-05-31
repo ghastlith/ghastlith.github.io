@@ -32,7 +32,7 @@
 
 <p>I am <TypeWriter {texts} {repeat} {endState} {afterDeleted} /></p>
 
-<style lang="scss">
+<style>
   p {
     font-size: calc(0.25dvw + 1.1rem);
   }

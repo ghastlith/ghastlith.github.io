@@ -1,7 +1,7 @@
 /**
- * Module declaration for TypeScript to understand the scss stylesheet import.
+ * Module declaration for TypeScript to understand the css stylesheet import.
  */
 declare module "$styles" {
-  const value: any;
-  export default value;
+  const classes: readonly Record<string, string>;
+  export default classes;
 }
