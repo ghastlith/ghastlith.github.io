@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page as state } from "$app/state";
-  import { Background, Loader, MetaTags, Navigation, Title } from "$components";
+  import { Background, Loader, Meta, Navigation, Title } from "$components";
   import { Page } from "$enums";
   import "$styles";
 
@@ -18,8 +18,8 @@
   <Loader />
 {/key}
 
-<Title {page} />
-<MetaTags />
+<Title title={page} />
+<Meta />
 <Background />
 
 <main>

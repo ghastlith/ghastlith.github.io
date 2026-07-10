@@ -2,12 +2,12 @@
   import { Page } from "$enums";
 
   interface TitleProps {
-    page: Page;
+    title: Page;
   }
 
-  let { page }: TitleProps = $props();
+  let { title }: TitleProps = $props();
 </script>
 
 <svelte:head>
-  <title>{page}</title>
+  <title>{title}</title>
 </svelte:head>
