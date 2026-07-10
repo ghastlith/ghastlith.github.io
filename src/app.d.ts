@@ -3,6 +3,7 @@
 /// <reference types="unplugin-icons/types/svelte" />
 
 import type { ResolvedPathname } from "$app/types";
+import { Page } from "$enums";
 import type { Snippet } from "svelte";
 
 declare global {
