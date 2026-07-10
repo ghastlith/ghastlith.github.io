@@ -1,0 +1,1 @@
+var e=function(e){return e.THIN=`thin`,e.UNDERLINE=`underline`,e.HIGHLIGHT=`highlight`,e.ACCENT=`accent`,e.UNSELECTABLE=`unselectable`,e}(e||{}),t=!0,n=Object.values(e).reduce(r,{});function r(e,n){return e[n]=t,e}export{n as t};

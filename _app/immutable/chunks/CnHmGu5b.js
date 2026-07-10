@@ -1,0 +1,1 @@
+var e=function(e){return e.HOME=`home`,e.WONDERLAND=`wonderland`,e.NOT_FOUND=`not found`,e}({}),t=function(e){return e.GITHUB=`github`,e.TRYHACKME=`tryhackme`,e}({}),n=function(e){return e.BLANK=`_blank`,e.SELF=`_self`,e}({});export{e as n,n as r,t};

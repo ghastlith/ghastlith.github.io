@@ -1,0 +1,1 @@
+import{G as e,K as t,n,o as r}from"../chunks/BlVHzkLU.js";import{c as i,t as a}from"../chunks/BqWwhm2V.js";import"../chunks/xihTtKlq.js";import"../chunks/DjnoLMo0.js";function o(o,s){t(s,!1);function c(){a(i(`/404`))}n(c),r(),e()}export{o as component};

@@ -1,0 +1,1 @@
+import{Z as e}from"../chunks/BlVHzkLU.js";import{n as t}from"../chunks/CnHmGu5b.js";import{t as n}from"../chunks/4YV-KbgJ.js";var r=e({load:()=>i}),i=async()=>({page:t.WONDERLAND});export{n as component,r as universal};
